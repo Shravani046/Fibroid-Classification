@@ -225,7 +225,7 @@ __marimo__/
 !data/eda_inventory_final.csv
 # Ignore datasets
 data/*
-data/splits/
+
 
 # Ignore trained models
 models/*.h5
