@@ -1,0 +1,13 @@
+{
+  "target_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "class_order": [
+    "non_fibroid",
+    "fibroid"
+  ],
+  "blur_threshold": 819.5125111226566,
+  "contrast_threshold": 47.62180024118173
+}
