@@ -224,8 +224,8 @@ __marimo__/
 # Ignore datasets
 data/*
 data/splits/**
-data/.gitkeep
-data/eda_inventory_final.csv
+!data/.gitkeep
+!data/eda_inventory_final.csv
 
 # Ignore trained models
 models/*.h5
