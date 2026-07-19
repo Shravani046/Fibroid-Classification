@@ -79,13 +79,13 @@ def preprocess_pipeline(path, target_size=TARGET_SIZE, apply_denoise=True, apply
     return img
 
 
-def check_blur(img_gray, threshold=829.77):
+def check_blur(img_gray, threshold=841.10):
     """Laplacian variance blur detection. Lower score = blurrier."""
     score = cv2.Laplacian(img_gray, cv2.CV_64F).var()
     return {'blur_score': float(score), 'is_blurry': score < threshold}
 
 
-def check_contrast(img_gray, threshold=44.82):
+def check_contrast(img_gray, threshold=46.40):
     """Low standard deviation in pixel intensity indicates flat/low-contrast image."""
     std = float(img_gray.std())
     return {'contrast_std': std, 'is_low_contrast': std < threshold}
