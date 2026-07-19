@@ -1,0 +1,16 @@
+{
+  "model": "EfficientNetB0 (frozen backbone, baseline)",
+  "test_accuracy": 0.7848,
+  "test_precision": 0.7613,
+  "test_recall": 0.7239,
+  "test_auc": 0.8454,
+  "roc_auc": 0.846,
+  "confusion_matrix": {
+    "tn": 181,
+    "fp": 37,
+    "fn": 45,
+    "tp": 118
+  },
+  "known_limitation": "Fibroid-class recall (0.72) lower than non-fibroid recall (0.83) \u2014 model currently more prone to missing true fibroids than over-flagging healthy scans. Target for Day 4 fine-tuning / threshold adjustment.",
+  "epochs_trained": 20
+}
